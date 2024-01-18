@@ -1,0 +1,38 @@
+.headerurl {
+  display: flex;
+  justify-content: space-between;
+}
+
+.headerurl_left {
+  display: flex;
+}
+
+.headerurl_left a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.headerurl_right {
+  display: flex;
+  margin-left: auto;
+}
+
+.headerurl_right a {
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+.header_googleacct {
+  padding: 8px 12px;
+  border-radius: 12px;
+  background-color: #174d26;
+  color: white;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font-size: 18px;
+}
