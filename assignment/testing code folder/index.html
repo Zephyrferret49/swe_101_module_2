@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoverable Wrapper</title>
+    <style>
+      .wrapper {
+        position: relative;
+        display: inline-block;
+      }
+
+      .child {
+        width: 50px;
+        height: 50px;
+        background-color: #3498db;
+        margin: 5px;
+      }
+
+      .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        opacity: 0;
+        transition: opacity 0.3s;
+        pointer-events: none; /* Allows interactions with underlying elements */
+      }
+
+      .wrapper:hover .overlay {
+        opacity: 1;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="child"></div>
+      <div class="overlay"></div>
+    </div>
+  </body>
+</html>
