@@ -7,6 +7,13 @@ body {
   height: 100vh;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .headerurl {
   display: flex;
   justify-content: space-between;
@@ -64,8 +71,7 @@ body {
   margin-top: 20px;
   border: 1px solid grey;
   border-radius: 15px;
-
-  /* why is this misaligned? o_0 */
+  width: fit-content;
 }
 
 .search_bar_row:hover {

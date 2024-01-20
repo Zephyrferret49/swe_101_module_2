@@ -33,6 +33,7 @@ body {
 .article-contents {
   display: flex;
   gap: 4px;
+  width: 100%;
 }
 
 .input-containers {
